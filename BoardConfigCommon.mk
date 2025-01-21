@@ -128,7 +128,7 @@ TARGET_MODULE_ALIASES += \
     wlan.ko:qca_cld3_wlan.ko
 
 # Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/mmi_charging_enable
+#TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/mmi_charging_enable
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -157,7 +157,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 BOARD_ROOT_EXTRA_SYMLINKS += /vendor/odm/vendor:/odm/vendor
 
 # Security
-VENDOR_SECURITY_PATCH := 2022-12-05
+VENDOR_SECURITY_PATCH := 2023-05-01
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
