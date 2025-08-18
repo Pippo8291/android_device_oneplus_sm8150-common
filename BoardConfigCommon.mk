@@ -148,3 +148,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8150-common/BoardConfigVendor.mk
+
+# even though we include vendor/axp/config/common.mk we need to include AXPs own BoardConfig
+# (after the above definitions & includes), too so we we can make use of the conditions within
+include vendor/axp/BoardConfigVendor.mk
