@@ -383,3 +383,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
+
+# enable AXP.OS vendor
+$(call inherit-product, vendor/axp/config/common.mk)
